@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+    
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    padding-top: 2%;
+    width: 100%;
+}
+
+#fp-icon.fp-left p {
+    color: grey;
+    font-size: 12pt;
+    padding-top: 350%;
+}
+
+@media only screen and (max-width: 650px) {
+    .serviceShow {
+        background-color: white;
+    }
+    .header {
+        margin-left: auto;
+        margin-right: auto;
+        width: 370px;
+    }
+
+    #fp-icon.fp-left {
+        left: 5vw;
+        margin-top: 32vh;
+        font-size: 10px;
+    }
+    #fp-icon.fp-left p {
+        color: grey;
+        font-size: 10px;
+        padding-top: 4vh;
+    }
+    .container {
+        background-color: unset;
+        height: 560px;
+        padding-top: 12vh;
+    }
+
+    .background {
+        position: relative;
+        width: 100%;
+        height: 230px;
+        overflow: hidden;
+    }
+ 
+    .dropdown-item {
+        text-transform: uppercase;
+        text-align: right;
+        color: grey;
+        transition: 0.5s;
+        font-size: 0.6rem;
+        font-family: 'poppin-medium';
+    }
+
+    .container img {
+        margin-left: 0;
+    }
+}

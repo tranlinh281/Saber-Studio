@@ -1,0 +1,173 @@
+body {
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    background-color: unset;
+    height: 750px;
+    padding-top: 10%
+}
+
+.container img {
+    margin-left: 20vw;
+}
+
+form .inputContact {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 2px;
+    border-bottom-color: gray;
+    width: 80%;
+    background-color: unset;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+}
+
+.buttonContact {
+    width: 30%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: firebrick;
+    border: none;
+    margin-top: 10%;
+    margin-left: 36%;
+    margin-right: auto;
+}
+
+.container h2 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.inputContact:focus {
+    background-color: unset;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contactContent {
+    position: absolute;
+    margin-left: 5%;
+    top: 30%;
+    width: 100%;
+    height: 10%;
+    z-index: 1;
+    text-align: left;
+    color: white;
+}
+
+#fp-icon.fp-left p {
+    color: grey;
+    font-size: 12pt;
+    padding-top: 350%;
+}
+
+@media only screen and (max-width: 650px) {
+    .serviceShow {
+        background-color: white;
+    }
+    .header {
+        margin-left: auto;
+        margin-right: auto;
+        width: 370px;
+    }
+    #fp-nav.fp-right {
+        right: 10%;
+        display: none;
+    }
+    #fp-icon.fp-left {
+        left: 5vw;
+        margin-top: 32vh;
+        font-size: 10px;
+    }
+    #fp-icon.fp-left p {
+        color: grey;
+        font-size: 10px;
+        padding-top: 4vh;
+    }
+    .container {
+        background-color: unset;
+        height: 560px;
+        padding-top: 12vh;
+    }
+    .container img {
+        margin-left: 20vw;
+    }
+
+    .container h2 {
+        font-size: 18pt;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    form .inputContact {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom-width: 2px;
+        border-bottom-color: gray;
+        width: 100%;
+        background-color: unset;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 7%;
+    }
+    .buttonContact {
+        width: 30%;
+        height: 35px;
+        border-radius: 10px;
+        background-color: firebrick;
+        border: none;
+        margin-top: 10%;
+        margin-left: 36%;
+        margin-right: auto;
+    }
+    .container h2 {
+        text-transform: uppercase;
+        color: white;
+    }
+    .inputContact:focus {
+        background-color: unset;
+    }
+    .background {
+        position: relative;
+        width: 100%;
+        height: 230px;
+        overflow: hidden;
+    }
+    .contactContent {
+        font-size: 4pt;
+        position: absolute;
+        margin-left: 16%;
+        top: 10%;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        text-align: left;
+        color: white;
+    }
+    .dropdown-item {
+        text-transform: uppercase;
+        text-align: right;
+        color: grey;
+        transition: 0.5s;
+        font-size: 0.6rem;
+        font-family: 'poppin-medium';
+    }
+
+    .container img {
+        margin-left: 0;
+    }
+}

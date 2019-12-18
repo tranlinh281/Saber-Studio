@@ -1,0 +1,477 @@
+/*
+  Simple experiment using variable fonts.
+  by Supremo
+*/
+
+@font-face {
+  font-family: "LeagueSpartanVariable";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2101521/LeagueSpartanVariable.ttf");
+}
+
+@font-face {
+  font-family: "SourceSerifVariable";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2101521/SourceSerifVariable-Roman.ttf");
+}
+
+/* :root {
+    --black: #1f1f1f;
+  } */
+
+li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  height: 90%;
+  font-family: "LeagueSpartanVariable";
+  background: var(--black);
+  overflow: hidden;
+  transition: background .3s;
+}
+
+.main h2 {
+  color: whitesmoke;
+  top: 0;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+.main__item button {
+  bottom: 0;
+  display: none;
+}
+
+.main:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("http://ashleydutton.co.uk/assets/images/noise.png");
+  opacity: 0.5;
+}
+
+.main__slider {
+  position: absolute;
+  width: 100vw;
+  top: 50%;
+  height: 70%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.main__slider.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.main__item.slick-slide {
+  position: relative;
+  opacity: 0.4;
+  transition: opacity 0.5s;
+  outline: none;
+  height: 400px;
+}
+
+.main__item.slick-current {
+  opacity: 1;
+  height: 70vh;
+}
+
+.main__item.slick-current .main__title {
+  color: white;
+  animation-delay: 0.1s;
+  display: inline-table;
+  animation-fill-mode: forwards;
+  margin-top: 10%;
+}
+
+.main__item.slick-current button {
+  display: inline;
+}
+
+.main__item.slick-current .main__image {
+  transform: scale(1);
+}
+
+.main__title {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  font-size: 14pt;
+  animation-fill-mode: forwards;
+  cursor: all-scroll;
+  text-align: center;
+}
+
+.main__image {
+  width: 80%;
+  height: 70%;
+  transform: scale(0.5);
+  transition: transform 0.5s;
+  transition-delay: 0.1s;
+  background-size: cover;
+  background-position: center;
+  cursor: grab;
+  margin-bottom: 40px;
+  margin-top: 25px;
+}
+
+.main__image:active, .main__title:active {
+  cursor: grabbing;
+}
+
+.main__credit {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  font-variation-settings: "wght" 200;
+}
+
+.main__credit a {
+  text-decoration: none;
+  font-variation-settings: "wght" 650;
+}
+
+.main__info {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+
+.main__info:hover+.main__info-window {
+  opacity: 1;
+  max-height: 200px;
+}
+
+.main__info-window {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+  width: 300px;
+  max-height: 0;
+  padding: 20px;
+  background: #fff;
+  color: var(--black);
+  font-size: 14px;
+  line-height: 1.4em;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.main__options {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+}
+
+.main__option {
+  position: relative;
+  font-size: 14px;
+  margin-right: 30px;
+  text-decoration: none;
+  font-variation-settings: "wght" 300;
+  transition: all .3s;
+}
+
+.main__option.active {
+  font-variation-settings: "wght" 700;
+}
+
+.main__option.active:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  height: 1px;
+  width: 100%;
+  ;
+  bottom: -5px;
+  left: 0;
+}
+
+.main--sports {
+  background: #fff;
+}
+
+.main--sports:before {
+  opacity: 1;
+}
+
+.main--sports * {
+  color: var(--black);
+}
+
+.main--sports .main__item.slick-current .main__title {
+  font-family: "SourceSerifVariable";
+  animation: none;
+}
+
+.main--sports .main__title {
+  font-family: "SourceSerifVariable";
+}
+
+.main--sports .main__item.slick-current:hover .main__title {
+  animation: grow 0.3s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+.main--sports .main__item.slick-current .main__title {
+  font-size: 50px;
+  animation: shrink 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.main--sports .main__image {
+  width: 500px;
+  height: 350px;
+  opacity: .7;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main--sports .main__option.active:after {
+  background: var(--black);
+}
+
+.main--sports .main__info-icon {
+  stroke: var(--black);
+}
+
+.main--sports .main__info-window {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.slider {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+ul form {
+  position: fixed;
+  bottom: 0px;
+}
+
+.buttonLastjobSetting {
+  background-color: #ab3b4b;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  margin-right: 20%;
+  color: white;
+}
+
+
+#fp-icon.fp-left p {
+  color: grey;
+  font-size: 12pt;
+  padding-top: 350%;
+}
+
+/* Animations */
+
+@keyframes grow {
+  0% {
+    font-variation-settings: "wght" 200;
+    font-size: 50px;
+  }
+  100% {
+    font-variation-settings: "wght" 650;
+    font-size: 125px;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    font-variation-settings: "wght" 650;
+    font-size: 125px;
+  }
+  100% {
+    font-variation-settings: "wght" 200;
+    font-size: 50px;
+  }
+}
+
+/*---------------------------------------*/
+
+@media only screen and (max-width: 650px) {
+  .main__image {
+    height: 350px;
+  }
+  .main__info {
+    top: 20px;
+    right: 20px;
+  }
+  .main__item.slick-slide {
+    margin: 0 20px;
+  }
+  .main__credit {
+    bottom: 25px;
+    right: 25px;
+  }
+  .main__options {
+    bottom: 25px;
+    left: 25px;
+  }
+  @keyframes grow {
+    0% {
+      font-variation-settings: "wght" 200;
+      font-size: 65px;
+    }
+    100% {
+      font-variation-settings: "wght" 650;
+      font-size: 65px;
+    }
+  }
+  @keyframes shrink {
+    0% {
+      font-variation-settings: "wght" 650;
+      font-size: 65px;
+    }
+    100% {
+      font-variation-settings: "wght" 200;
+      font-size: 65px;
+    }
+  }
+}
+
+#section2 .saber {
+  font-size: 16pt;
+  margin-bottom: 3%;
+  font-family: poppin-semibold
+}
+
+.title_saber {
+  font-size: 14pt;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  font-family: poppin-thin;
+}
+
+.textaria {
+  width: 40%;
+  height: 15%;
+  background-color: unset;
+  color: gray;
+  text-align: center;
+  font-size: 14pt;
+  padding-top: 3%;
+  font-family: poppin-thin;
+}
+
+.fp-controlArrow {
+  top: 94%;
+}
+
+@media only screen and (max-width: 650px){
+  .dropdown-item {
+    text-transform: uppercase;
+    text-align: right;
+    color: grey;
+    transition: 0.5s;
+    font-size: 0.6rem;
+    font-family: 'poppin-medium';
+}
+
+  .header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 370px;
+  }
+  #section0 {
+    background-image: url('../../imgs/mobile.jpg');
+    background-size: cover;
+  }
+
+  video {
+    display: none;
+  }
+  #fp-icon.fp-left {
+    bottom: 0px;
+  }
+  #fp-nav.fp-right {
+    right: 10%;
+    display: none;
+  }
+  #fp-icon.fp-left {
+    left: 5vw;
+    margin-top: 32vh;
+    font-size: 10px;
+  }
+
+  #fp-icon.fp-left p {
+    color: grey;
+    font-size: 10px;
+    padding-top: 4vh;
+  }
+  .main h2 {
+    margin: 30% auto 0 auto;
+    font-size: 20pt;
+  }
+  .main__item p {
+    margin: 0;
+    font-size: 12pt;
+  }
+  .main__image {
+    padding-top: 12vh;
+  }
+
+  #section2 h3 {
+    padding-top: 12vh;
+    padding-left: 30px;
+    text-align: left;
+  }
+  #section2 .saber {
+    padding-left: 30px;
+    text-align: left;
+  }
+  .title_saber {
+    width: 90vw;
+    text-align: left;
+    padding-left: 14px;
+  }
+  .textaria {
+    width: 86vw;
+    text-align: center;
+    margin: 5vh 0 5vh 0;
+  }
+}

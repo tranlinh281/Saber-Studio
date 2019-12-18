@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+
+.containerLast {
+  width: 70vw;
+  max-width: 500px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  position: relative;
+  perspective: 1000px;
+  transform: translate3d(-50%, -50%, 600px);
+  /* ^^^ 600px for safari hack */
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+h3 {
+  color: #fbdcb9;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 2px;
+}
+
+.planet {
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.planet button {
+  display: inline;
+}
+
+.planet:active button {
+  display: none;
+}
+
+
+.buttonPortfolioSetting {
+  position: fixed;
+  background-color: #ab3b4b;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  margin: 0 auto;
+  bottom: 15%;
+  margin-left: -20%;
+  padding-top: 8px;
+}
+
+.buttonPortfolioSetting:hover font {
+  position: relative;
+  opacity: 0;
+  transform: all 0.4s;
+}
+
+.buttonPortfolioSetting:hover i {
+  opacity: 1;
+  margin-left: -146px;
+  transform: rotate(1turn);
+  color: white;
+}
+
+.buttonPortfolioSetting i {
+  position: relative;
+  opacity: 0;
+  transition: transform 0.6s ease-in-out;
+}
+
+.sliderVideo img {
+  padding-top: 6%;
+  width: 50%;
+  height: auto
+}
+
+.containerLast .titleService {
+  margin-bottom: 120%;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+
+.titleService h2 {
+  padding: 6% 0 0 0;
+  text-align: center;
+  font-family: 'Big Caslon Medium';
+  font-size: 36px
+}
+
+.titleService p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 12pt;
+  font-family: 'poppin-medium'
+}
+
+#videoShowReel {
+  max-width: 100%;
+  margin-left: 28%;
+}
+
+iframe {
+  width:62%;
+  height: 500px;
+}
+
+#fp-icon.fp-left p {
+  color: grey;
+  font-size: 12pt;
+  padding-top: 350%;
+}
+
+@media only screen and (max-width: 650px) {
+  .dropdown-item {
+    text-transform: uppercase;
+    text-align: right;
+    color: grey;
+    transition: 0.5s;
+    font-size: 0.6rem;
+    font-family: 'poppin-medium';
+}
+  .header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 370px;
+  }
+  #fp-icon.fp-left {
+    bottom: 0px;
+  }
+  #fp-nav.fp-right {
+    right: 10%;
+    display: none;
+  }
+  #fp-icon.fp-left {
+    left: 5vw;
+    margin-top: 32vh;
+    font-size: 10px;
+  }
+
+  #fp-icon.fp-left p {
+    color: grey;
+    font-size: 10px;
+    padding-top: 4vh;
+  }
+  .title h2 {
+    margin: 5vh 0 0 0;
+    font-size: 20pt;
+  }
+  .sliderVideo img {
+    margin-top: 26vh;
+    width: 80%;
+    height: 30vh;
+  }
+  #slide1 .title p {
+    width: 90%;
+    text-align: left;
+    padding-top: 46vh;
+    padding-left: 10px;
+    font-size: 10pt;
+  }
+  .containerLast {
+    width: 50vw;
+    max-width: 500px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    position: relative;
+    perspective: 1000px;
+    transform: translate3d(-50%, -50%, 600px);
+    /* ^^^ 600px for safari hack */
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .buttonPortfolioSetting {
+    background-color: #ab3b4b;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    margin: -21vh 0 0 -11vh;
+    align-self: center;
+    padding-top: 8px;
+  }
+  .containerLast .titleService {
+    margin-bottom: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    width: 100vw;
+  }
+  .titleService h2 {
+    font-size: 20px;
+  }
+  .titleService p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'poppin-medium'
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    margin-left: -54px;
+  }
+}

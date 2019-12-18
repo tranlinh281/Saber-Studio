@@ -1,0 +1,282 @@
+@charset "utf-8";
+/* CSS Document */
+
+.background {
+	z-index: -10;
+}
+
+.container {
+	z-index: 10;
+	margin-top: -60%;
+}
+
+.container h2 {
+	font-family: 'poppin-extrabold';
+	text-align: center;
+	color: gray;
+}
+
+.container h3 {
+	font-family: 'poppin-semibold';
+	text-align: left;
+	width: 50%;
+	color: #FFFFFF;
+	font-size: 22px;
+	padding-top: 3%
+}
+
+.container h3.h3__two {
+	font-family: 'poppin-thin';
+	text-align: left;
+	width: 50%;
+	font-size: 20px;
+	color: #FFFFFF;
+	padding-top: 20px
+}
+
+.container h1 {
+	font-family: 'Big Caslon Medium';
+	text-align: right;
+	font-size: 110px;
+	color: grey;
+	padding-top: 3%
+}
+
+.container hr {
+	border: 1px #FFFFFF solid;
+	width: 50%;
+}
+
+.contact-name {
+	width: 30%;
+	float: left;
+}
+
+.contact-name ul li {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.contact-name ul li a {
+	text-decoration: none;
+	font-size: 21px;
+	color: #FFFFFF
+}
+
+.contact-name ul li:hover {
+	background-color: unset;
+	color: white;
+	opacity: 0.6;
+}
+
+.contact-nameitem {
+	width: 20%;
+	float: left;
+	margin-left: 5%;
+}
+
+.contact-nameitem ul li {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.contact-nameitem ul li a {
+	text-decoration: none;
+	font-size: 21px;
+	color: #FFFFFF;
+}
+
+.contact-nametext {
+	padding-top: 20px;
+	padding-left: 5%;
+	width: 40%;
+	float: right;
+}
+
+.contact-nametext p {
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.textt {
+	margin-top: 50%;
+	width: 40%;
+	color: #FFFFFF;
+}
+
+.textt.text_h2 {
+	font-family: 'poppin-Black';
+	font-size: 24px;
+	color: gray
+}
+
+.textt.text_p {
+	font-family: 'poppin-thin';
+	font-size: 20px;
+	padding-top: 20%;
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 35px;
+	z-index: 99;
+	font-size: 35px;
+	color: white;
+
+	/* border: none;
+	outline: none;
+	background-color: gray;
+	
+	cursor: pointer;
+	padding: 15px; */
+	/* border-radius: 50%; */
+	/* opacity: 20%; */
+}
+
+#myBtn:hover {
+	opacity: .7;
+}
+
+@media only screen and (max-width: 650px){
+	.dropdown-item {
+		text-transform: uppercase;
+		text-align: right;
+		color: grey;
+		transition: 0.5s;
+		font-size: 0.6rem;
+		font-family: 'poppin-medium';
+	}
+	.header {
+		margin-left: auto;
+		margin-right: auto;
+		width: 370px;
+	}
+
+	#fp-nav.fp-right {
+		right: 10%;
+		display: none;
+	}
+	#fp-icon.fp-left {
+		left: 78vw;
+		margin-top: 32vh;
+		font-size: 10px;
+		text-align: end;
+	}
+	#fp-icon.fp-left p {
+		color: grey;
+		font-size: 10px;
+		padding-top: 4vh;
+	}
+	.background {
+		z-index: -10;
+	}
+	.container {
+		z-index: 10;
+		margin-top: -60%;
+	}
+	.container h2 {
+		font-family: 'poppin-extrabold';
+		text-align: center;
+		color: gray;
+	}
+	.container h3 {
+		font-family: 'poppin-semibold';
+		text-align: left;
+		width: 50%;
+		color: #FFFFFF;
+		font-size: 10pt;
+		padding-top: 3%
+	}
+	.container h3.h3__two {
+		font-family: 'poppin-thin';
+		text-align: left;
+		width: 50%;
+		font-size: 10pt;
+		color: #FFFFFF;
+		padding-top: 20px
+	}
+	.container h1 {
+		font-family: 'Big Caslon Medium';
+		text-align: right;
+		font-size: 20pt;
+		color: grey;
+		padding-top: 3%
+	}
+	.container hr {
+		border: 1px #FFFFFF solid;
+		width: 50%;
+	}
+	.contact-name {
+		width: 30%;
+		float: left;
+	}
+	.contact-name ul li {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.contact-name ul li a {
+		text-decoration: none;
+		font-size: 8pt;
+		color: #FFFFFF
+	}
+	.contact-name ul li:hover {
+		background-color: unset;
+		color: white;
+		opacity: 0.6;
+	}
+	.contact-nameitem {
+		width: 20%;
+		float: left;
+		margin-left: 5%;
+	}
+	.contact-nameitem ul li {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.contact-nameitem ul li a {
+		text-decoration: none;
+		font-size: 8pt;
+		color: #FFFFFF;
+	}
+	.contact-nametext {
+		padding-top: 20px;
+		padding-left: 5%;
+		width: 40%;
+		float: right;
+	}
+	.contact-nametext p {
+		font-size: 10pt;
+	}
+	.textt {
+		margin-top: 26%;
+		width: 40%;
+		color: #FFFFFF;
+	}
+	.textt.textt_h2 {
+		font-size: 10pt;
+		margin: 0;
+	}
+	.textt p {
+		font-size: 8pt;
+	}
+
+	#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 40px;
+		right: 50px;
+		z-index: 1000;
+		font-size: 18px;
+		border: none;
+		outline: none;
+		background-color: gray;
+		color: white;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 4px;
+		opacity: 20%;
+	}
+
+}

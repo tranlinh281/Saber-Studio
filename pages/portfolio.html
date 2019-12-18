@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Saber Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../styles/css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-light header">
+		<a class="navbar-brand" href="home.html" style="color: gray; font-size: 20pt"><font style="font-family: 'poppin-black'; color: skyblue;" >Saber</font>studio</a>
+		<!-- <div > -->
+		<!-- bar drop -->
+		<div class="nav-item dropdown bar" data-toggle="dropdown" onclick="myFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+		
+		<!-- menudrop -->
+		<div class="dropdown-menu">
+			<a class="dropdown-item" href="introduction.html">Introduction</a>
+			<a class="dropdown-item" href="service.html">Service</a>
+			<a class="dropdown-item" href="portfolio.html">Portfolio</a>
+			<a class="dropdown-item" href="contact.html">Contact</a>
+		</div>
+    </nav>
+    
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="slide" id="slide1">
+                <div class="sliderVideo">
+                    <img src="../imgs/saber-crossfire-comp.gif" style="width: 100%">
+                </div>
+                <div class="title">
+                    <h2 style="font-family: poppin-black">
+                        PORTFOLIO
+                    </h2>
+                    <p >Before her videos were racking up millions of views on YouTube, the
+                        artist spent more than a decade training in one of the world’s oldest and most complex musical
+                        art forms.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- portfolio -->
+        <div class="section" id="section1">
+            <div class="serviceShow">
+                <!-- Magazine -->
+                <label class="slide-button" for="slideCheckbox1" style="font-family: poppin-bold">Magazine</label>
+                <input type="radio" id="slideCheckbox1" name="show" checked>
+                <div class="service">
+                    <div class="slide__content">
+                        <h1 style="color: whitesmoke;font-family: poppin-extrabold">Maga<font style="color: #A2A2A2">
+                                zine</font>
+                        </h1>
+                        <p class="p1">Magazine here</p>
+                        <p class="p2">Saberstudio is a
+                            multidisciplinary <font style="font-family: poppin-lightitaly">creative studio</font> at the
+                            intersection of art, design and technology. <font style="font-family: poppin-lightitaly">We
+                                are on a mission to explore</font>, create meaning and provoke emotions through design
+                            and storytelling.</p>
+                        <form action="bookShow.html">
+                            <button class="buttonSetting">Booking</button>
+                            <a href="#"><u><i>read more...</i></u></a>
+                        </form>
+                    </div>
+
+                </div>
+                <!-- Branding -->
+                <label class="slide-button" for="slideCheckbox2" style="font-family: poppin-bold">Branding</label>
+                <input type="radio" id="slideCheckbox2" name="show">
+                <div class="service">
+                    <div class="slide__content">
+                        <h1 style="font-family: 'poppin-extrabold';"> Brand<font style="color: #A2A2A2">ing</font>
+                        </h1>
+                        <p class="p1">Branding here</p>
+                        <p class="p2">Saberstudio is a
+                            multidisciplinary <font style="font-family: poppin-lightitaly">creative studio</font> at the
+                            intersection of art, design and technology. <font style="font-family: poppin-lightitaly">We
+                                are on a mission to explore</font>, create meaning and provoke emotions through design
+                            and storytelling.</p>
+                            <form action="brandingShow.html">
+                                <button class="buttonSetting">Booking</button>
+                                <a href="#"><u><i>read more...</i></u></a>
+                            </form>
+                    </div>
+                </div>
+                <!-- Web -->
+                <label class="slide-button" for="slideCheckbox3" style="font-family: poppin-bold">Web</label>
+                <input type="radio" id="slideCheckbox3" name="show">
+                <div class="service">
+                    <div class="slide__content">
+                        <h1 style="font-family: poppin-extrabold">W<font style="color: #A2A2A2">eb</font>
+                        </h1>
+                        <p class="p1">Web here</p>
+                        <p class="p2">Saberstudio is a
+                            multidisciplinary <font style="font-family: poppin-lightitaly">creative studio</font> at the
+                            intersection of art, design and technology. <font style="font-family: poppin-lightitaly">We
+                                are on a mission to explore</font>, create meaning and provoke emotions through design
+                            and storytelling.</p>
+                            <form action="webDeignShow.html">
+                                <button class="buttonSetting">Booking</button>
+                                <a href="#" ><u><i>read more...</i></u></a>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sliderpage -->
+    <div id="fp-nav" class="fp-right" style="margin-top: -33.5px;">
+        <ul>
+            <li><a href="#firstPage" class="active"><span class="fp-sr-only">First page</span><span></span></a>
+                <div class="fp-tooltip fp-right">First page</div>
+            </li>
+            <li><a href="#secondPage"><span class="fp-sr-only">Second page</span><span></span></a>
+                <div class="fp-tooltip fp-right">Second page</div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- icon -->
+    <div id="fp-icon" class="fp-left">
+		<ul>
+			<li>
+				<a href="https://www.instagram.com/"> <i class="fab fa-instagram fa-2x"></i></a>
+			</li><br>
+			<li>
+				<a href="https://www.facebook.com/"> <i class="fab fa-facebook fa-2x"></i></a>
+			</li><br>
+			<li>
+				<a href="https://twitter.com/"><i class="fab fa-twitter fa-2x"></i></a>
+			</li>
+		</ul>
+		<p>&copy; 2019 Saber</p>
+	</div>
+
+    <script type="text/javascript" src="../styles/js/fullpage.js"></script>
+    <script type="text/javascript" src="../styles/js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['firstPage', 'secondPage', '3rdPage'],
+            sectionsColor: ['black', 'black', 'black'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['First page', 'Second page', 'Third and last page']
+        });
+
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
