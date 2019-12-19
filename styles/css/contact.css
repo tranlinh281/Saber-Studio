@@ -1,4 +1,4 @@
-body {
+html {
     background-color: black;
 }
 
@@ -50,7 +50,7 @@ form .inputContact {
     background-color: unset;
 }
 
-.background {
+.backgroundImageContact {
     position: relative;
     width: 100%;
     height: 100%;
@@ -141,7 +141,7 @@ form .inputContact {
     .inputContact:focus {
         background-color: unset;
     }
-    .background {
+    .backgroundImageContact {
         position: relative;
         width: 100%;
         height: 230px;

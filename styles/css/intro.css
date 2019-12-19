@@ -1,22 +1,59 @@
-@charset "utf-8";
-/* CSS Document */
-
-.background {
-	z-index: -10;
+html {
+	background-color: black;
 }
 
-.container {
-	z-index: 10;
-	margin-top: -60%;
+.intro_item {
+	position: relative;
 }
 
-.container h2 {
+.bgImage {
+	position: relative;
+}
+
+.bgImage img {
+	background-size: cover;
+	height: 800px;
+	width: 100%;
+}
+
+.des_intro {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 8%;
+	/* width: 100%; */
+	height: 100%;
+	z-index: 1;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+.des_intro .contact-name {
+	width: 30%;
+	float: left;
+}
+
+.member_item {
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	text-align: left;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	padding-top: 10vh;
+	width: 38%;
+	color: #FFFFFF;
+}
+
+.des_intro h2 {
 	font-family: 'poppin-extrabold';
 	text-align: center;
 	color: gray;
 }
 
-.container h3 {
+.des_intro h3 {
 	font-family: 'poppin-semibold';
 	text-align: left;
 	width: 50%;
@@ -25,7 +62,7 @@
 	padding-top: 3%
 }
 
-.container h3.h3__two {
+.des_intro h3.h3__two {
 	font-family: 'poppin-thin';
 	text-align: left;
 	width: 50%;
@@ -34,7 +71,7 @@
 	padding-top: 20px
 }
 
-.container h1 {
+.des_intro h1 {
 	font-family: 'Big Caslon Medium';
 	text-align: right;
 	font-size: 110px;
@@ -42,14 +79,9 @@
 	padding-top: 3%
 }
 
-.container hr {
+.des_intro hr {
 	border: 1px #FFFFFF solid;
 	width: 50%;
-}
-
-.contact-name {
-	width: 30%;
-	float: left;
 }
 
 .contact-name ul li {
@@ -98,22 +130,16 @@
 	color: #FFFFFF;
 }
 
-.textt {
-	margin-top: 50%;
-	width: 40%;
-	color: #FFFFFF;
-}
-
-.textt.text_h2 {
+.member_item .hello__text{
 	font-family: 'poppin-Black';
-	font-size: 24px;
+	font-size: 30px;
 	color: gray
 }
 
-.textt.text_p {
+.member_item p {
 	font-family: 'poppin-thin';
-	font-size: 20px;
-	padding-top: 20%;
+	font-size: 20pt;
+	padding-top: 10%;
 }
 
 #myBtn {
@@ -124,22 +150,13 @@
 	z-index: 99;
 	font-size: 35px;
 	color: white;
-
-	/* border: none;
-	outline: none;
-	background-color: gray;
-	
-	cursor: pointer;
-	padding: 15px; */
-	/* border-radius: 50%; */
-	/* opacity: 20%; */
 }
 
 #myBtn:hover {
 	opacity: .7;
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 650px) {
 	.dropdown-item {
 		text-transform: uppercase;
 		text-align: right;
@@ -153,7 +170,6 @@
 		margin-right: auto;
 		width: 370px;
 	}
-
 	#fp-nav.fp-right {
 		right: 10%;
 		display: none;
@@ -169,114 +185,158 @@
 		font-size: 10px;
 		padding-top: 4vh;
 	}
-	.background {
-		z-index: -10;
+	
+	.intro_item {
+		position: relative;
 	}
-	.container {
-		z-index: 10;
-		margin-top: -60%;
+	
+	.bgImage {
+		position: relative;
 	}
-	.container h2 {
+	
+	.bgImage img {
+		background-size: cover;
+		height: 800px;
+		width: 100%;
+	}
+	
+	.des_intro {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		top: 8%;
+		/* width: 100%; */
+		height: 100%;
+		z-index: 1;
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
+	
+	.des_intro .contact-name {
+		width: 30%;
+		float: left;
+	}
+	
+	.member_item {
+		position: absolute;
+		top: 10%;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		text-align: left;
+		margin-left: 10vw;
+		margin-right: 10vw;
+		padding-top: 10vh;
+		width: 38%;
+		color: #FFFFFF;
+	}
+	
+	.des_intro h2 {
 		font-family: 'poppin-extrabold';
 		text-align: center;
 		color: gray;
 	}
-	.container h3 {
+	
+	.des_intro h3 {
 		font-family: 'poppin-semibold';
 		text-align: left;
 		width: 50%;
 		color: #FFFFFF;
-		font-size: 10pt;
+		font-size: 22px;
 		padding-top: 3%
 	}
-	.container h3.h3__two {
+	
+	.des_intro h3.h3__two {
 		font-family: 'poppin-thin';
 		text-align: left;
 		width: 50%;
-		font-size: 10pt;
+		font-size: 20px;
 		color: #FFFFFF;
 		padding-top: 20px
 	}
-	.container h1 {
+	
+	.des_intro h1 {
 		font-family: 'Big Caslon Medium';
 		text-align: right;
-		font-size: 20pt;
+		font-size: 110px;
 		color: grey;
 		padding-top: 3%
 	}
-	.container hr {
+	
+	.des_intro hr {
 		border: 1px #FFFFFF solid;
 		width: 50%;
 	}
-	.contact-name {
-		width: 30%;
-		float: left;
-	}
+	
 	.contact-name ul li {
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
+	
 	.contact-name ul li a {
 		text-decoration: none;
-		font-size: 8pt;
+		font-size: 21px;
 		color: #FFFFFF
 	}
+	
 	.contact-name ul li:hover {
 		background-color: unset;
 		color: white;
 		opacity: 0.6;
 	}
+	
 	.contact-nameitem {
 		width: 20%;
 		float: left;
 		margin-left: 5%;
 	}
+	
 	.contact-nameitem ul li {
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
+	
 	.contact-nameitem ul li a {
 		text-decoration: none;
-		font-size: 8pt;
+		font-size: 21px;
 		color: #FFFFFF;
 	}
+	
 	.contact-nametext {
 		padding-top: 20px;
 		padding-left: 5%;
 		width: 40%;
 		float: right;
 	}
+	
 	.contact-nametext p {
-		font-size: 10pt;
-	}
-	.textt {
-		margin-top: 26%;
-		width: 40%;
+		font-size: 20px;
 		color: #FFFFFF;
 	}
-	.textt.textt_h2 {
-		font-size: 10pt;
-		margin: 0;
+	
+	.member_item .hello__text{
+		font-family: 'poppin-Black';
+		font-size: 30px;
+		color: gray
 	}
-	.textt p {
-		font-size: 8pt;
+	
+	.member_item p {
+		font-family: 'poppin-thin';
+		font-size: 20pt;
+		padding-top: 10%;
 	}
-
+	
 	#myBtn {
 		display: none;
 		position: fixed;
-		bottom: 40px;
-		right: 50px;
-		z-index: 1000;
-		font-size: 18px;
-		border: none;
-		outline: none;
-		background-color: gray;
+		bottom: 30px;
+		right: 35px;
+		z-index: 99;
+		font-size: 35px;
 		color: white;
-		cursor: pointer;
-		padding: 15px;
-		border-radius: 4px;
-		opacity: 20%;
 	}
-
+	
+	#myBtn:hover {
+		opacity: .7;
+	}
 }
