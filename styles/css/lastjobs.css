@@ -34,7 +34,7 @@ li a {
 
 .main h2 {
   color: whitesmoke;
-  top: 0;
+  top: 10;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -106,7 +106,7 @@ li a {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  font-size: 14pt;
+  font-size: 13pt;
   animation-fill-mode: forwards;
   cursor: all-scroll;
   text-align: center;
@@ -302,7 +302,7 @@ ul form {
 #fp-icon.fp-left p {
   color: grey;
   font-size: 12pt;
-  padding-top: 350%;
+  padding-top: 30vh;
 }
 
 /* Animations */
@@ -330,6 +330,39 @@ ul form {
 }
 
 /*---------------------------------------*/
+
+@media only screen and (max-width: 1000px) and (min-width: 650px){
+  .sliderVideo img {
+    margin-top: 20vh;
+    width: 60%;
+    height: 40vh;
+  }
+  #slide1 .title p {
+    width: 80%;
+    text-align: left;
+    padding-top: 46vh;
+    padding-left: 10px;
+    font-size: 20pt !important;
+  }
+
+  .header {
+    z-index: 1;
+    width: 92%;
+    margin: 2% 0 0 4%;
+  }
+
+  .title h2 {
+    font-size: 20pt;
+  }
+
+  
+#fp-icon.fp-left p {
+  color: grey;
+  font-size: 12pt;
+  padding-top: 28vh;
+}
+}
+
 
 @media only screen and (max-width: 650px) {
   .main__image {
@@ -413,10 +446,10 @@ ul form {
 }
 
   .header {
-    margin-left: auto;
-    margin-right: auto;
-    width: 370px;
+    margin: 2% 0 0 4%;
+    width: 90%;
   }
+  
   #section0 {
     background-image: url('../../imgs/mobile.jpg');
     background-size: cover;
@@ -441,7 +474,7 @@ ul form {
   #fp-icon.fp-left p {
     color: grey;
     font-size: 10px;
-    padding-top: 4vh;
+    padding-top: 2vh;
   }
   .main h2 {
     margin: 30% auto 0 auto;

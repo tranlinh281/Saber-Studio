@@ -8,16 +8,16 @@
   overflow: hidden;
 }
 
-input {
+.serviceShow input {
   display: none;
 }
 
-input:checked+.service {
+.serviceShow input:checked+.service {
   transform: translateX(0px);
   transition: transform 0.5s ease-in-out;
 }
 
-input:checked+.service .slide__content {
+.serviceShow input:checked+.service .slide__content {
   width: 100%;
   display: block;
 }
@@ -46,6 +46,11 @@ input:checked+.service .slide__content {
   opacity: 1;
   text-align: left;
   padding-top: 20%;
+}
+
+.slide__content h1 {
+  color: whitesmoke;
+  font-family: 'poppin-extrabold'
 }
 
 .service:nth-child(3) {
@@ -102,7 +107,7 @@ input:checked+.service .slide__content {
   height: 100px;
 }
 
-label {
+.section label {
   box-sizing: border-box;
   color: #AAA;
   font-weight: bold;
@@ -118,25 +123,24 @@ label {
   text-transform: uppercase;
 }
 
-label:hover {
+.section label:hover {
   cursor: grab;
   color: #FFF;
-  border-bottom: solid 4px yellow;
   bottom: 12px;
   transition: .4s;
 }
 
-label:nth-child(1) {
+.section label:nth-child(1) {
   left: calc(50% + (0 * (50% / 5)));
   border-bottom-color: gray;
 }
 
-label:nth-child(4) {
+.section label:nth-child(4) {
   left: calc(50% + (2 * (50% / 5)));
   border-bottom-color: gray;
 }
 
-label:nth-child(7) {
+.section label:nth-child(7) {
   left: calc(50% + (4 * (50% / 5)));
   border-bottom-color: gray;
 }
@@ -161,7 +165,7 @@ form a:hover {
   width: 80%;
 }
 
-.slide__content form a {
+.slide__content a {
   font-size: 14pt;
   color: gray;
   padding-left: 14px;
@@ -170,7 +174,21 @@ form a:hover {
 #fp-icon.fp-left p {
   color: grey;
   font-size: 12pt;
-  padding-top: 350%;
+  padding-top: 30vh;
+}
+
+form .inputContact {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 2px;
+  border-bottom-color: gray;
+  width: 80%;
+  background-color: unset;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7%;
 }
 
 @keyframes fade-in {
@@ -187,6 +205,99 @@ form a:hover {
   }
 }
 
+@media only screen and (max-width: 1000px) and (min-width: 650px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  .sliderVideo img {
+    margin-top: 20vh;
+    width: 60%;
+    height: 40vh;
+  }
+  #slide1 .title p {
+    width: 80%;
+    text-align: left;
+    padding-top: 46vh;
+    padding-left: 10px;
+    font-size: 16pt !important;
+  }
+  .header {
+    z-index: 1;
+    width: 92%;
+    margin: 2% 0 0 4%;
+  }
+  .title h2 {
+    font-size: 20pt;
+  }
+  .service {
+    transform: translateX(-100%);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-size: 50% 100%;
+    transition: transform 0.5s ease-in-out;
+    background-color: black;
+  }
+  .slide__content h1 {
+    font-size: 50pt;
+    padding-top: inherit;
+  }
+  .slide__content .p1 {
+    font-size: 20pt;
+  }
+  .slide__content .p2 {
+    font-size: 16px;
+  }
+  .service:nth-child(3) {
+    background: url("../../imgs/79282262_492922801320257_5195370703859220480_n.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  .service:nth-child(3):after {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 90px;
+  }
+  .service:nth-child(6) {
+    background: url("../../imgs/brading portfolio.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+  }
+  .service:nth-child(6):after {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+  }
+  .service:nth-child(9) {
+    background: url("../../imgs/web portfolio.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+  }
+  .service:nth-child(9):after {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .dropdown-item {
     text-transform: uppercase;
@@ -195,14 +306,13 @@ form a:hover {
     transition: 0.5s;
     font-size: 0.6rem;
     font-family: 'poppin-medium';
-}
+  }
   .serviceShow {
     background-color: white;
   }
   .header {
-    margin-left: auto;
-    margin-right: auto;
-    width: 370px;
+    margin: 2% 0 0 4%;
+    width: 90%;
   }
   #fp-nav.fp-right {
     right: 10%;
@@ -213,13 +323,11 @@ form a:hover {
     margin-top: 32vh;
     font-size: 10px;
   }
-
   #fp-icon.fp-left p {
     color: grey;
     font-size: 10px;
     padding-top: 4vh;
   }
-  
   .title h2 {
     margin: 5vh 0 0 0;
     font-size: 20pt;
@@ -229,10 +337,10 @@ form a:hover {
     width: 80%;
     height: 30vh;
   }
-  .title p {
+  #slide1 .title p {
     width: 90%;
     text-align: left;
-    margin-top: 80%;
+    margin-top: 45%;
     padding-left: 10px;
     font-size: 10pt;
   }
@@ -268,6 +376,10 @@ form a:hover {
     text-align: left;
     bottom: 10vh;
   }
+  .slide__content h1 {
+    color: black;
+  }
+
   .service:nth-child(3) {
     background: url("../../imgs/magazine portfolio.png");
     background-repeat: no-repeat;
@@ -316,7 +428,7 @@ form a:hover {
     width: 100%;
     height: 100px;
   }
-  label {
+  .section label {
     box-sizing: border-box;
     color: #AAA;
     font-weight: bold;
@@ -332,24 +444,24 @@ form a:hover {
     text-transform: uppercase;
     z-index: 5;
   }
-  label:hover {
+  .section label:hover {
     cursor: grab;
     color: #FFF;
     border-bottom: solid 4px yellow;
     bottom: 12px;
     transition: .4s;
   }
-  label:nth-child(1) {
+  .section label:nth-child(1) {
     left: 20vw;
     border-bottom-color: gray;
     color: gray;
   }
-  label:nth-child(4) {
+  .section label:nth-child(4) {
     left: 50vw;
     border-bottom-color: gray;
     color: gray;
   }
-  label:nth-child(7) {
+  .section label:nth-child(7) {
     left: 80vw;
     border-bottom-color: gray;
     color: gray;
@@ -359,13 +471,13 @@ form a:hover {
     color: black;
   }
   .slide__content .p1 {
-    font-size: 18pt;
+    font-size: 12pt;
     width: 30%;
     color: grey;
   }
   .slide__content .p2 {
-    font-size: 12px;
-    color: rgb(0, 0, 0)
+    font-size: 10pt;
+    color: black
   }
   .buttonSetting {
     position: static;
@@ -380,6 +492,4 @@ form a:hover {
   .slide__content form a {
     font-size: 10pt;
   }
-
-
 }

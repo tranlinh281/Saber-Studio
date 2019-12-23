@@ -1,5 +1,10 @@
 html {
 	background-color: black;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .intro_item {
@@ -50,14 +55,14 @@ html {
 .des_intro h2 {
 	font-family: 'poppin-extrabold';
 	text-align: center;
-	color: gray;
+	color: white;
 }
 
 .des_intro h3 {
-	font-family: 'poppin-semibold';
+	font-family: 'poppin';
 	text-align: left;
 	width: 50%;
-	color: #FFFFFF;
+	color: rgba(235, 235, 235, 0.993);
 	font-size: 22px;
 	padding-top: 3%
 }
@@ -130,7 +135,7 @@ html {
 	color: #FFFFFF;
 }
 
-.member_item .hello__text{
+.member_item .hello__text {
 	font-family: 'poppin-Black';
 	font-size: 30px;
 	color: gray
@@ -138,7 +143,7 @@ html {
 
 .member_item p {
 	font-family: 'poppin-thin';
-	font-size: 20pt;
+	font-size: 17pt;
 	padding-top: 10%;
 }
 
@@ -156,6 +161,148 @@ html {
 	opacity: .7;
 }
 
+#fp-icon.fp-left p {
+    color: grey;
+    font-size: 12pt;
+    padding-top: 30vh;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 650px) {
+	.intro_item {
+		position: relative;
+	}
+	.bgImage {
+		position: relative;
+	}
+	.bgImage img {
+		background-size: cover;
+		height: 500px;
+		width: 100%;
+	}
+	.des_intro {
+		position: absolute;
+		top: 8%;
+		/* width: 100%; */
+		height: 40%;
+		z-index: 1;
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
+	.des_intro .contact-name {
+		width: 35%;
+		float: left;
+	}
+	.member_item {
+		position: absolute;
+		top: 10%;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		text-align: left;
+		margin-left: 10vw;
+		margin-right: 10vw;
+		padding-top: 10vh;
+		width: 38%;
+		color: #FFFFFF;
+	}
+	.des_intro h2 {
+		font-family: 'poppin-extrabold';
+		text-align: center;
+		color: gray;
+		font-size: 24pt;
+	}
+	.des_intro h3 {
+		font-family: 'poppin-semibold';
+		text-align: left;
+		width: 50%;
+		color: #FFFFFF;
+		font-size: 15pt;
+		padding-top: 3%
+	}
+	.des_intro h3.h3__two {
+		font-family: 'poppin-thin';
+		text-align: left;
+		width: 50%;
+		font-size: 12pt;
+		color: #FFFFFF;
+		padding-top: 20px
+	}
+	.des_intro h1 {
+		font-family: 'Big Caslon Medium';
+		text-align: right;
+		font-size: 30pt;
+		color: grey;
+		padding-top: 3%
+	}
+	.des_intro hr {
+		border: 1px #FFFFFF solid;
+		width: 50%;
+	}
+	.contact-name ul li {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.contact-name ul li a {
+		text-decoration: none;
+		font-size: 21px;
+		color: #FFFFFF
+	}
+	.contact-name ul li:hover {
+		background-color: unset;
+		color: white;
+		opacity: 0.6;
+	}
+	.contact-nameitem {
+		width: 20%;
+		float: left;
+		margin-left: 5%;
+	}
+	.contact-nameitem ul li {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.contact-nameitem ul li a {
+		text-decoration: none;
+		font-size: 21px;
+		color: #FFFFFF;
+	}
+	.contact-nametext {
+		padding-top: 20px;
+		padding-left: 5%;
+		width: 40%;
+		float: right;
+	}
+	.contact-nametext p {
+		font-size: 12pt;
+		color: #FFFFFF;
+	}
+	.member_item .hello__text {
+		font-family: 'poppin-Black';
+		font-size: 20pt;
+		color: gray
+	}
+	.member_item p {
+		font-family: 'poppin-thin';
+		font-size: 14pt;
+		padding-top: 10%;
+	}
+	#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 30px;
+		right: 35px;
+		z-index: 99;
+		font-size: 35px;
+		color: white;
+	}
+
+	#fp-icon.fp-left p {
+		color: grey;
+		font-size: 10px;
+		padding-top: 30vh;
+	}
+}
+
 @media only screen and (max-width: 650px) {
 	.dropdown-item {
 		text-transform: uppercase;
@@ -164,11 +311,11 @@ html {
 		transition: 0.5s;
 		font-size: 0.6rem;
 		font-family: 'poppin-medium';
+		z-index: 100;
 	}
 	.header {
-		margin-left: auto;
-		margin-right: auto;
-		width: 370px;
+		margin: 2% 0 0 4%;
+		width: 90%;
 	}
 	#fp-nav.fp-right {
 		right: 10%;
@@ -185,21 +332,17 @@ html {
 		font-size: 10px;
 		padding-top: 4vh;
 	}
-	
 	.intro_item {
 		position: relative;
 	}
-	
 	.bgImage {
 		position: relative;
 	}
-	
 	.bgImage img {
 		background-size: cover;
 		height: 800px;
 		width: 100%;
 	}
-	
 	.des_intro {
 		position: absolute;
 		margin-left: auto;
@@ -211,12 +354,10 @@ html {
 		margin-left: 10vw;
 		margin-right: 10vw;
 	}
-	
 	.des_intro .contact-name {
 		width: 30%;
 		float: left;
 	}
-	
 	.member_item {
 		position: absolute;
 		top: 10%;
@@ -230,13 +371,11 @@ html {
 		width: 38%;
 		color: #FFFFFF;
 	}
-	
 	.des_intro h2 {
 		font-family: 'poppin-extrabold';
 		text-align: center;
-		color: gray;
+		color:white;
 	}
-	
 	.des_intro h3 {
 		font-family: 'poppin-semibold';
 		text-align: left;
@@ -245,7 +384,6 @@ html {
 		font-size: 22px;
 		padding-top: 3%
 	}
-	
 	.des_intro h3.h3__two {
 		font-family: 'poppin-thin';
 		text-align: left;
@@ -254,7 +392,6 @@ html {
 		color: #FFFFFF;
 		padding-top: 20px
 	}
-	
 	.des_intro h1 {
 		font-family: 'Big Caslon Medium';
 		text-align: right;
@@ -262,70 +399,58 @@ html {
 		color: grey;
 		padding-top: 3%
 	}
-	
 	.des_intro hr {
 		border: 1px #FFFFFF solid;
 		width: 50%;
 	}
-	
 	.contact-name ul li {
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
-	
 	.contact-name ul li a {
 		text-decoration: none;
 		font-size: 21px;
 		color: #FFFFFF
 	}
-	
 	.contact-name ul li:hover {
 		background-color: unset;
 		color: white;
 		opacity: 0.6;
 	}
-	
 	.contact-nameitem {
 		width: 20%;
 		float: left;
 		margin-left: 5%;
 	}
-	
 	.contact-nameitem ul li {
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
-	
 	.contact-nameitem ul li a {
 		text-decoration: none;
 		font-size: 21px;
 		color: #FFFFFF;
 	}
-	
 	.contact-nametext {
 		padding-top: 20px;
 		padding-left: 5%;
 		width: 40%;
 		float: right;
 	}
-	
 	.contact-nametext p {
 		font-size: 20px;
 		color: #FFFFFF;
 	}
-	
-	.member_item .hello__text{
+	.member_item .hello__text {
 		font-family: 'poppin-Black';
 		font-size: 30px;
 		color: gray
 	}
-	
 	.member_item p {
 		font-family: 'poppin-thin';
 		font-size: 20pt;
 		padding-top: 10%;
 	}
-	
 	#myBtn {
 		display: none;
 		position: fixed;
@@ -336,7 +461,155 @@ html {
 		color: white;
 	}
 	
-	#myBtn:hover {
-		opacity: .7;
+}
+
+@media only screen and (max-width: 375px) and (min-height: 812px) {
+	.header {
+		margin: 2% 0 0 2%;
+		width: 22%;
+	}
+
+	#fp-nav.fp-right {
+		right: 10%;
+		display: none;
+	}
+	#fp-icon.fp-left {
+		left: 78vw;
+		margin-top: 32vh;
+		font-size: 10px;
+		text-align: end;
+	}
+	#fp-icon.fp-left p {
+		color: grey;
+		font-size: 10px;
+		padding-top: 4vh;
+	}
+	.intro_item {
+		position: relative;
+	}
+	.bgImage {
+		position: relative;
+	}
+	.bgImage img {
+		background-size: cover;
+		height: 800px;
+		width: 100%;
+	}
+	.des_intro {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		top: 8%;
+		/* width: 100%; */
+		height: 100%;
+		z-index: 1;
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
+	.des_intro .contact-name {
+		width: 30%;
+		float: left;
+	}
+	.member_item {
+		position: absolute;
+		top: 10%;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		text-align: left;
+		margin-left: 10vw;
+		margin-right: 10vw;
+		padding-top: 10vh;
+		width: 38%;
+		color: #FFFFFF;
+	}
+	.des_intro h2 {
+		font-family: 'poppin-extrabold';
+		text-align: center;
+		color: gray;
+	}
+	.des_intro h3 {
+		font-family: 'poppin-semibold';
+		text-align: left;
+		width: 50%;
+		color: #FFFFFF;
+		font-size: 22px;
+		padding-top: 3%
+	}
+	.des_intro h3.h3__two {
+		font-family: 'poppin-thin';
+		text-align: left;
+		width: 50%;
+		font-size: 20px;
+		color: #FFFFFF;
+		padding-top: 20px
+	}
+	.des_intro h1 {
+		font-family: 'Big Caslon Medium';
+		text-align: right;
+		font-size: 110px;
+		color: grey;
+		padding-top: 3%
+	}
+	.des_intro hr {
+		border: 1px #FFFFFF solid;
+		width: 50%;
+	}
+	.contact-name ul li {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.contact-name ul li a {
+		text-decoration: none;
+		font-size: 21px;
+		color: #FFFFFF
+	}
+	.contact-name ul li:hover {
+		background-color: unset;
+		color: white;
+		opacity: 0.6;
+	}
+	.contact-nameitem {
+		width: 20%;
+		float: left;
+		margin-left: 5%;
+	}
+	.contact-nameitem ul li {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.contact-nameitem ul li a {
+		text-decoration: none;
+		font-size: 21px;
+		color: #FFFFFF;
+	}
+	.contact-nametext {
+		padding-top: 20px;
+		padding-left: 5%;
+		width: 40%;
+		float: right;
+	}
+	.contact-nametext p {
+		font-size: 20px;
+		color: #FFFFFF;
+	}
+	.member_item .hello__text {
+		font-family: 'poppin-Black';
+		font-size: 30px;
+		color: gray
+	}
+	.member_item p {
+		font-family: 'poppin-thin';
+		font-size: 20pt;
+		padding-top: 10%;
+	}
+	#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 30px;
+		right: 35px;
+		z-index: 99;
+		font-size: 35px;
+		color: white;
 	}
 }

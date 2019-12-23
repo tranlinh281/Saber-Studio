@@ -371,6 +371,7 @@ button:active, button:focus {
 .title h2 {
     padding: unset;
     color: whitesmoke;
+    content: "thay the di ";
 }
 
 .title p {
